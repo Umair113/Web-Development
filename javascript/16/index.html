@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Disapppearing Circles</title>
+
+
+
+<style>
+
+body
+{
+margin:0px;
+}
+
+
+div{
+display:inline-block;
+border:none;
+margin:auto;
+}
+
+
+
+#circle1 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:red;
+	margin-left:50px;
+	margin-top:100px;
+	
+} 
+#circle2 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:blue;
+	margin-top:100px;
+	margin-left:50px;
+} 
+#circle3 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:yellow;
+	margin-left:50px;
+	margin-top:100px;
+}
+ 
+
+
+</style>
+
+
+
+</head>
+
+<body>
+<input id="text_input" type="text">
+
+<input id="button1" type="button" value="Change the text">
+<p id="para">Input: </p>
+
+<script>
+var iteration=0;
+var textEntered="";
+
+document.getElementById("button1").onclick=function(){
+
+textEntered=document.getElementById("text_input").value;
+
+iteration=iteration+1;
+document.getElementById("para").innerHTML+="<br>"+iteration+". This is the text you entered:"+"<br>"+textEntered;
+textEntered="";
+}
+</script>
+</body>
+
+
+</html>

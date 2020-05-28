@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<video width='500' controls id='Vd'>
+<source src="E:\Web Development Courses\1 Udemy\1 The Complete Web Developer Course 2.0     [FreeCourseSite.com] Udemy -\12. HTML 5 & CSS 3 Special Features\1. Introduction To HTML 5CSS 3 Features Section.mp4" type="video/mp4">
+
+
+
+</video>
+<button id="player">play</button>
+<script>
+
+document.getElementById("player").onclick=function()
+{
+
+var myVideo = document.getElementById("Vd");
+        if (myVideo.paused)
+          {
+		  myVideo.play();
+		  this.innerHTML="pause";
+		  }
+        else
+		{
+          myVideo.pause();
+		  this.innerHTML="play";
+		}
+}
+
+</script>
+
+
+
+</body>
+
+</html>

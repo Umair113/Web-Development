@@ -1,0 +1,110 @@
+ <script type="text/javascript">
+        function validation() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pwd").value;
+            var repassword = document.getElementById("rePwd").value;
+            var age = parseInt(document.getElementById("age").value);
+            var contactNo = document.getElementById("cn").value;
+           
+            var numReg = "";
+
+            num.match(numReg)
+           
+
+            emailReg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+            if(name!="" && email !="" && password != "" && repassword!="" && contactNo!="" && age!="" && contactNo!="" )
+            {
+                if (email.match(emailReg)) {
+                    if (document.getElementById("male").checked || document.getElementById("female").checked)
+                    {
+                        if (!isNaN(age) && age > 12)
+                        {
+                            if (contactNo.length == 10)
+                            {
+                                alert("Form submitted");
+                                return true;
+                            }
+                            else {
+                                alert("Enter contact no of 10 digits");
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            alert("Please enter no in age field");
+                            return false;
+                        }
+                    }
+                    else {
+                        alert("Please select gender");
+                        return false;
+                    }
+                }
+                else{
+                    alert("Invalid Email");
+                    return false;
+                }
+
+            }
+            else
+            {
+                alert("All fields are required");
+                return false;
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+<form action="#" method="post"  name="frm1" onsubmit="return validation()">
+      
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input id="name" type="text"  /></td>
+                
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input id="email" type="text" /></td>
+                
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input id="male" name="gender" type="radio" /><input id="female" name="gender" type="radio" />
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input id="age" type="text" /></td>
+                
+            </tr>
+            <tr>
+                <td>Contact No:</td>
+                <td><input id="cn" type="text" /></td>
+                
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input id="pwd" type="password" /></td>
+                
+            </tr>
+            <tr>
+                <td>Retype Password:</td>
+                <td><input id="rePwd" type="password" /></td>
+                
+            </tr>
+              
+        </table>
+        <input type="submit" value="submit"/>
+    </form>

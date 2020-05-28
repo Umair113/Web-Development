@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Disapppearing Circles</title>
+
+
+
+<style>
+
+body
+{
+margin:0px;
+}
+
+
+div{
+display:inline-block;
+border:none;
+margin:auto;
+}
+
+
+
+#circle1 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:red;
+	margin-left:50px;
+	margin-top:100px;
+	
+} 
+#circle2 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:blue;
+	margin-top:100px;
+	margin-left:50px;
+} 
+#circle3 {
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	background-color:yellow;
+	margin-left:50px;
+	margin-top:100px;
+}
+ 
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<div id="circle1">	</div>
+<div id="circle2">	</div>
+<div id="circle3">	</div>
+
+
+
+<script>
+document.getElementById("circle1").onclick=function(){
+	document.getElementById("circle1").style.display="none";
+}
+document.getElementById("circle2").onclick=function(){
+	document.getElementById("circle2").style.display="none";
+
+}
+document.getElementById("circle3").onclick=function(){
+	document.getElementById("circle3").style.display="none";
+
+}
+
+
+
+
+</script>
+</body>
+
+
+</html>

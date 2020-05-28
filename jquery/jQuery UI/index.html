@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+-->
+
+
+<script  type="text/javascript" src="jquery.min.js"></script>
+<script  type="text/javascript" src="jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+
+<style>
+  
+  #big{
+  width:300px;
+  height:300px;
+  background-color:blue;
+  }
+  #small{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:green;
+  }
+ </style>
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="big">
+
+
+
+</div>
+
+<div id="small">
+<p></p>
+</div>
+
+<script type="text/javascript">
+
+$("#small").draggable();
+
+$("#big").droppable({
+drop: function(event ,ui){
+//$(this).addClass( "ui-state-highlight" )
+{alert("got it")};
+
+}
+
+});
+
+</script>
+
+
+
+
+</body>
+</html>

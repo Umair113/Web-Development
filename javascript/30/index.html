@@ -1,0 +1,134 @@
+<html>
+<head>
+	<script type="text/javascript">
+            var timerStart = Date.now();
+			
+	</script>
+
+
+
+<style>
+
+input:hover{
+cursor:pointer
+}
+
+
+#square{
+background-color:green;
+border:none;
+height:100px;
+width:100px;
+position:relative;
+left:400px;
+}
+#circle{
+background-color:blue;
+border:none;
+height:100px;
+width:100px;
+border-radius:50%;
+position:relative;
+}
+</style>
+
+
+</head>
+
+
+<body>
+<h1>Test your Reactions!</h1>
+<p>Click on the boxes and circles as quickly as you can!</p>
+<p><b>Your Time:<b><span id="timer"></span></p>
+
+
+
+<input id="square" type="button">
+<input id="circle" type="button">
+
+<script type="text/javascript">
+document.getElementById("circle").style.display="none";
+
+	</script>
+	
+	
+	
+	
+	
+<script>
+
+
+
+
+var time=0;
+var temp=0;
+var stime=0;
+var ctime=0;
+document.getElementById("square").onclick=function squareFun() {
+stime=Date.now();
+if(temp==0)
+{
+time= (Date.now()-timerStart)/1000;
+}
+else{
+time= (Date.now()-ctime)/1000;
+}
+temp=1;
+document.getElementById("timer").innerHTML=time+"s";
+document.getElementById("square").style.display="none";
+setTimeout((circle_visible), 1000);
+
+}
+
+
+
+document.getElementById("circle").onclick=function circleFun(){
+ctime=Date.now();
+time= (Date.now()-stime)/1000;
+document.getElementById("timer").innerHTML=time+"s";
+document.getElementById("circle").style.display="none";
+setTimeout((square_visible), 1000);
+}
+
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+function square_visible()
+{
+var width=(Math.random()*300);
+
+var squareStyle=document.getElementById("square").style;
+squareStyle.display="block";
+squareStyle.top=(Math.random()*300);
+squareStyle.left=(Math.random()*1000);
+squareStyle.width=width;
+squareStyle.height=width;
+squareStyle.backgroundColor=getRandomColor();
+}
+function circle_visible()
+{
+var width=(Math.random()*300);
+
+var circleStyle=document.getElementById("circle").style;
+circleStyle.display="block";
+
+circleStyle.top=(Math.random()*100);
+circleStyle.left=(Math.random()*1000);
+circleStyle.width=width;
+circleStyle.height=width;
+circleStyle.backgroundColor=getRandomColor();
+}
+
+</script>
+</body>
+
+
+</html>

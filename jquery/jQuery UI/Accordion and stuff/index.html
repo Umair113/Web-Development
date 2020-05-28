@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+-->
+
+
+<script  type="text/javascript" src="jquery.min.js"></script>
+<script  type="text/javascript" src="jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+
+<style>
+ 
+ </style>
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="accordion">
+<h3 >Section 1</h3>
+<div >
+<p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+</div>
+<h3 >Section 2</h3>
+<div >
+<p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+</div>
+<h3 >Section 3</h3>
+<div >
+<p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+</div>
+<h3 >Section 4</h3>
+<div >
+<p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+</div>
+</div>
+
+<ul id="sorting">
+<li>item 1</li>
+
+<li>item 2</li>
+
+<li>item 3</li>
+</ul>
+
+<script>
+  
+    $( "#accordion" ).accordion();
+	$("#sorting").sortable({function(event,ui){
+		
+		alert("hi");
+	
+	}});
+$("#sorting").disableSelection();
+	
+  </script>
+
+
+
+
+
+<script>
+
+ </script>
+</body>
+</html>

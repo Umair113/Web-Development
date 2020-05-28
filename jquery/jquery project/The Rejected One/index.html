@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>jQuery</title>
+
+</head>
+
+<body>
+  <!--Page top-->
+  <div id="topContainer">
+    <h3>CodePlayer</h3>
+    <nav>
+      <span id="html" class="topElements toggler">HTML</span>
+      <span id="css" class="topElements toggler">CSS</span>
+      <span id="javascript" class="topElements toggler">Javascript</span>
+      <span id="output" class="topElements toggler">Output</span>
+    </nav>
+  </div>
+
+  <!--Page Body-->
+  <div class="wrapper">
+
+    <div id="wholehtml" class="panel active">
+      <div class="upperHeading">
+        <h3>HTML</h3>
+      </div>
+      <textarea class="textArea" id="dhtml" placeholder="HTML"></textarea>
+    </div>
+
+    <div id="wholecss" class="panel hidden">
+      <div class="upperHeading">
+        <h3>CSS</h3>
+      </div>
+      <textarea class="textArea" id="dcss" placeholder="CSS"></textarea>
+    </div>
+
+    <div id="wholejavascript" class="panel hidden">
+      <div class="upperHeading">
+        <h3>Javascript</h3>
+      </div>
+      <textarea class="textArea" id="djavascript" placeholder="Javascript"></textarea>
+    </div>
+
+    <div id="wholeoutput" class="panel active">
+      <div class="upperHeading">
+        <h3>
+          Output
+        </h3>
+      </div>
+      <iframe id="doutput">
+      </iframe>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="script.js" type="text/javascript">
+
+  </script>
+
+
+</body>
+
+</html>

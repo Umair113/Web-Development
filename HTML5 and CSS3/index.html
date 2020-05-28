@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <form id="myForm" action="action1.php" method="post"></form>
+  <input form="myForm" formmethod="get" list="browsers" name="browser" required>
+  <datalist id="browsers">
+    <select>
+      <option value="Internet Explorer">Internet Explorer</option>
+      <option value="Firefox">Firefox</option>
+      <option value="Chrome">Chrome</option>
+      <option value="Opera">Opera</option>
+      <option value="Safari">Safari</option>
+    </select>
+  </datalist>
+  <input form="myForm" formmethod="post" type="submit">
+  <input form="myForm" formmethod="get" type="email">
+  <br><br>
+  <input type="file" multiple>
+  <br><br><br>
+
+
+  <video id='video' width="500" height="400" controls>
+
+    <source
+      src="E:\Web Development Courses\1 Udemy\1 The Complete Web Developer Course 2.0     [FreeCourseSite.com] Udemy -\12. HTML 5 & CSS 3 Special Features\1. Introduction To HTML 5CSS 3 Features Section.mp4"
+      type='video/mp4'>
+
+
+  </video>
+  <button id="player">play/pause</button>
+
+
+  <script>
+    document.getElementById("player").onclick = function () 
+      {
+        alert("asdf");
+        var myVideo = document.getElementByID("video");
+        if (myVideo.paused)
+          myVideo.play();
+        else
+          myVideo.pause();
+      }
+
+  </script>
+
+
+</body>
+
+</html>

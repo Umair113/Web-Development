@@ -1,0 +1,89 @@
+@import url("fontawesome.min.css");
+@import url("fontawesome.css");
+@import url("all.css");
+body
+{
+	position:relative;
+}
+.container-fluid{
+	padding:0;
+}
+.navbar {
+	background-color:gray;
+font-size:small;
+}
+
+.navbar-brand{
+	font-size:large;
+	margin-right:10px;
+}
+.form-inline .form-control  {
+    
+    width: 250px;
+    
+}
+.form-control {
+	height:50px;
+}
+
+
+
+
+
+
+#jumbotron1{
+	background-image: url("jb.jif");
+	border-radius: 0%;
+	margin-top:80px
+	
+}
+#jumbotron1 h1{
+	text-align: center;
+}
+#jtext{
+	text-align: center;
+}
+#jheading{
+	text-align: center;
+}
+#jpara{
+	text-align: center;
+	font-size: small;
+}
+#jbutton{
+	
+	margin-left: 5px;
+}
+
+#basic-addon1{
+	height: 50px;
+	margin-left: 350px;
+	
+}
+#jemail{
+	width:400px;
+	border-radius: 5px;
+	
+}
+
+
+
+
+#app{
+	background-color:rgb(64, 224, 163) ;
+	margin-bottom: 0px;
+	height:500px;
+}
+#appicon{
+	margin: 0 auto;
+    width: 250px;
+    height: 100px;
+	background-color: black;
+	border-radius: 10px;
+}
+#appicon:hover{
+	cursor: pointer;
+}
+#last{
+	text-align: center;
+}

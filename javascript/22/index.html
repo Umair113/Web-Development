@@ -1,0 +1,36 @@
+<html>
+
+<head></head>
+<body>
+
+<p>how many fingers do you think are there,<br> Enter your guess now, will you mate?</p>
+
+<input id="input" type="number" placeholder="Enter a digit between 1 and 5">
+<input id="tester" type="button" value="czeck" >
+
+<script>
+
+document.getElementById("tester").onclick=function()
+{
+//document.getElementById("p1").innerHTML=Math.floor((Math.random()*6)) ;
+var userInput=document.getElementById("input").value;
+var value=( Math.floor(Math.random()*6));
+if(userInput==value)
+{
+alert("Right!<br>Damn!");
+}
+else 
+{
+alert("wrong!, dope, it was nothing but "+value);
+}
+
+
+}
+</script>
+</body>
+
+
+
+
+
+</html>

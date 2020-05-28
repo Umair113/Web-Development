@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+<body>
+
+<p>Enter your credentials now, will you mate?</p>
+<p>
+<label for="login">Login:</label>
+<input id="userLogin" type="text" name="login" placeholder="Enter your name">
+</p>
+<p><label for="my_password">Password:</label>
+<input id="userPassword" type="password" name="my_password" placeholder="Enter your Password"></p>
+<p><input id="login_button" type="button" value="Sign-in"></p>
+<p id="p1">this is, is this</p>
+
+<script>
+var magic="user";
+document.getElementById("login_button").onclick=function()
+{
+document.getElementById("p1").innerHTML=Math.floor((Math.random()*6)) ;
+if(document.getElementById("userLogin").value==magic&&document.getElementById("userPassword").value==magic)
+alert("true that");
+else
+alert("untrue that");
+}
+</script>
+</body>
+
+
+
+
+
+</html>
